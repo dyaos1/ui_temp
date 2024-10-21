@@ -11,6 +11,7 @@ import { useEffect, useState } from "react";
 import BottomButtons from "./buttonGroup/BottomButtons";
 import LoadingMark from "./component/LoadingMark";
 import { ht_mapper } from "@/data/ht_mapper";
+import SbjtList from "./sbjtList/SbjtList";
 
 const Container = () => {
     const [visible, setVisible] = useState(false)
@@ -29,7 +30,6 @@ const Container = () => {
     
     return (
         <>
-    
             <Line />
 
             <Header />
@@ -54,10 +54,9 @@ const Container = () => {
 
                     <Line />
 
-                    <div className="flex flex-col justify-items-center text-center">
-                        <p>...</p>
-                        <p className="text-lg font-bold">후략</p>
-                    </div>
+                    <Title content="과제리스트"/>
+
+                    <SbjtList />
 
                     <Line />
 

@@ -24,17 +24,17 @@ interface HTDataRowProps {
 const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increase, increasePercent, setVisible, setPayload, rowCount, setRowCount }: HTDataRowProps) => {
     
     const typeAProps = (type === "A") ? " font-semibold": ""
-    const typeBProps = (type === "B") ? "" : ""
+    const typeBProps = (type === "B" || type==="D") ? "" : ""
     const typeCProps = (type === "C") ? " text-left text-sm" : ""
 
-    const buttonAProps = (type === "A") ? " font-semibold hover:cursor-default": ""
-    const buttonBProps = (type === "B") ? "" : ""
-    const buttonCProps = (type === "C" ) ? " text-left text-sm hover:bg-slate-200" : ""
+    const buttonAProps = (type === "A") ? " border border-solid text-center font-semibold": ""
+    const buttonBProps = (type === "B") ? " border border-solid text-center" : ""
+    const buttonCProps = (type === "C" ) ? " border border-solid text-left text-sm hover:bg-slate-200" : ""
+    const buttonDProps = (type === "D") ? "" : ""
 
     const cellProp = "col-span-2" + typeAProps + typeBProps + typeCProps
     const miniCellProp = "col-span-1" + typeAProps + typeBProps + typeCProps
-    const buttonProp = "col-span-2" + buttonAProps + buttonBProps + buttonCProps
-
+    const buttonProp = "col-span-2" + buttonAProps + buttonBProps + buttonCProps + buttonDProps
 
     // eslint-disable-next-line
     const SummonUnitCostCalculator = (e: any) => {
@@ -64,9 +64,17 @@ const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increa
                 {numberHandler(nextYear)}
             </div>
 
-            <button className={buttonProp} onClick={SummonUnitCostCalculator} value={updated}>
-                {numberHandler(updated)}
-            </button>
+            {
+                (type === 'C')
+                 ?
+                <button className={buttonProp} onClick={SummonUnitCostCalculator} value={updated}>
+                    {numberHandler(updated)}
+                </button>
+                 : (type === 'D')
+                     ? <div className={buttonProp}>{numberHandler(updated)}</div>
+                     : <input className={buttonProp} value={numberHandler(updated)} />
+            }
+            
 
             <div className={miniCellProp}>
                 {numberHandler(increase)}
