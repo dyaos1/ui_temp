@@ -1,8 +1,9 @@
 const numberHandler = (inputValue: string): string => {
-    if (Number(inputValue)) {
-        return inputValue.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+    const replaced = inputValue.replace(",", "")
+    if (Number(replaced)) {
+        return replaced.replace(/\B(?=(\d{3})+(?!\d))/g, ",")
     } else {
-        return inputValue
+        return replaced
     }
 }
 

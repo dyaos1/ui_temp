@@ -1,6 +1,8 @@
 'use client'
 
 import numberHandler from "@/utils/numberHandler"
+import { HT_DataRow } from "@/data/ht_mapper"
+import { useEffect, useRef, useState } from "react"
 
 interface HTDataRowProps {
     type: string
@@ -19,9 +21,12 @@ interface HTDataRowProps {
     setVisible: any
     // eslint-disable-next-line
     setPayload: any
+    // eslint-disable-next-line
+    setHT: any
+    HT: HT_DataRow[]
 }
 
-const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increase, increasePercent, setVisible, setPayload, rowCount, setRowCount }: HTDataRowProps) => {
+const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increase, increasePercent, setVisible, setPayload, rowCount, setRowCount, setHT, HT }: HTDataRowProps) => {
     
     const typeAProps = (type === "A") ? " font-semibold": ""
     const typeBProps = (type === "B" || type==="D") ? "" : ""
@@ -35,6 +40,15 @@ const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increa
     const cellProp = "col-span-2" + typeAProps + typeBProps + typeCProps
     const miniCellProp = "col-span-1" + typeAProps + typeBProps + typeCProps
     const buttonProp = "col-span-2" + buttonAProps + buttonBProps + buttonCProps + buttonDProps
+
+    const [ updatedUpdated, setUpdated ] = useState(updated)
+    const updatedUpdatedRef = useRef(false)
+    useEffect(() => {
+        if (updatedUpdatedRef.current == false) { 
+            setUpdated(numberHandler(updatedUpdated))
+            updatedUpdatedRef.current = true 
+        }
+    }, [updatedUpdated, ])
 
     // eslint-disable-next-line
     const SummonUnitCostCalculator = (e: any) => {
@@ -72,7 +86,15 @@ const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increa
                 </button>
                  : (type === 'D')
                      ? <div className={buttonProp}>{numberHandler(updated)}</div>
-                     : <input className={buttonProp} value={numberHandler(updated)} />
+                     : <input 
+                     className={buttonProp} 
+                     value={updatedUpdated} 
+                     onChange={(e)=> {
+                        updatedUpdatedRef.current = false
+                        HT[rowCount].updated = e.target.value
+                        setUpdated(e.target.value)
+                        setHT(HT)
+                    }}/>
             }
             
 

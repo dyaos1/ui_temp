@@ -12,16 +12,18 @@ interface HorizontalTableProps {
     setPayload: any
     // eslint-disable-next-line
     setRowCount: any
+    // eslint-disable-next-line
+    setHT: any
 
-    data: HT_DataRow[]
+    HT: HT_DataRow[]
 }
 
-const HorizontalTable = ({setPayload, setVisible, data, setRowCount}: HorizontalTableProps) => {
+const HorizontalTable = ({setPayload, setVisible, HT, setRowCount, setHT}: HorizontalTableProps) => {
     return (
         <div className="mx-5 mt-2 mb-5">
             <HorizontalTableHeader />
             {
-                data.map(
+                HT && HT.map(
                     (e, i) => (
                         <HTDataRow 
                             key={e.bsnsNm+i}
@@ -33,10 +35,12 @@ const HorizontalTable = ({setPayload, setVisible, data, setRowCount}: Horizontal
                             updated={e.updated}
                             increase={e.increase}
                             increasePercent={e.increasePercent}
+                            rowCount={e.rowCount}
                             setVisible={setVisible}
                             setPayload={setPayload}
                             setRowCount={setRowCount}
-                            rowCount={e.rowCount}
+                            setHT={setHT}
+                            HT={HT}
                         />
                     )
                 )

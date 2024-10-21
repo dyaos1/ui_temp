@@ -50,7 +50,7 @@ const Container = () => {
                         visible && <UnitCostCalculator setVisible={setVisible} payload={payload} rowCount={rowCount} HT={HT} setHT={setHT} />
                     }
 
-                    <HorizontalTable setVisible={setVisible} data={HT} setPayload={setPayload} setRowCount={setRowCount} />
+                    <HorizontalTable setVisible={setVisible} HT={HT} setPayload={setPayload} setRowCount={setRowCount} setHT={setHT} />
 
                     <Line />
 
