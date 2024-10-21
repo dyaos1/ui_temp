@@ -11,7 +11,7 @@ const Title = ( {content} : Content ) => {
             <VerticalSpacer y={10} />
 
             <div className="flex flex-row">
-                <HorizontalSpacer x={15} />
+                <HorizontalSpacer x={30} />
                 <div className="text-lg font-semibold">
                     {content}
                 </div>

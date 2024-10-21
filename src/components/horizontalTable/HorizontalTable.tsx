@@ -2,7 +2,7 @@
 
 import HTDataRow from "./HTDataRow";
 import HorizontalTableHeader from "./HorizontalTableHeader";
-import ht from "../../data/ht.json"
+import { HT_DataRow } from "../../data/ht_mapper"
 
 
 interface HorizontalTableProps {
@@ -10,29 +10,33 @@ interface HorizontalTableProps {
     setVisible: any
     // eslint-disable-next-line
     setPayload: any
-    payload: string
+    // eslint-disable-next-line
+    setRowCount: any
+
+    data: HT_DataRow[]
 }
 
-const HorizontalTable = ({setPayload, setVisible, payload}: HorizontalTableProps) => {
+const HorizontalTable = ({setPayload, setVisible, data, setRowCount}: HorizontalTableProps) => {
     return (
         <div className="mx-5 mt-2 mb-5">
             <HorizontalTableHeader />
             {
-                ht.data.map(
+                data.map(
                     (e, i) => (
                         <HTDataRow 
-                            key={e.사업명+i}
-                            type={e.타입}
-                            bsnsNm={e.사업명}  
-                            lastYear={e.전년도}
-                            thisYear={e.올해}
-                            nextYear={e.수정전}
-                            updated={e.수정후}
-                            increase={e.증감}
-                            increasePercent={e.퍼센트}
+                            key={e.bsnsNm+i}
+                            type={e.type}
+                            bsnsNm={e.bsnsNm}  
+                            lastYear={e.lastYear}
+                            thisYear={e.thisYear}
+                            nextYear={e.nextYear}
+                            updated={e.updated}
+                            increase={e.increase}
+                            increasePercent={e.increasePercent}
                             setVisible={setVisible}
                             setPayload={setPayload}
-                            payload={payload}
+                            setRowCount={setRowCount}
+                            rowCount={e.rowCount}
                         />
                     )
                 )

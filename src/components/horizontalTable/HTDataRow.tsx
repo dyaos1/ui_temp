@@ -12,21 +12,28 @@ interface HTDataRowProps {
     increase: string
     increasePercent: string
 
+    rowCount: number
+    // eslint-disable-next-line
+    setRowCount: any
     // eslint-disable-next-line
     setVisible: any
     // eslint-disable-next-line
     setPayload: any
-    payload: string
 }
 
-const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increase, increasePercent, setVisible, setPayload }: HTDataRowProps) => {
+const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increase, increasePercent, setVisible, setPayload, rowCount, setRowCount }: HTDataRowProps) => {
     
     const typeAProps = (type === "A") ? " font-semibold": ""
     const typeBProps = (type === "B") ? "" : ""
     const typeCProps = (type === "C") ? " text-left text-sm" : ""
 
+    const buttonAProps = (type === "A") ? " font-semibold hover:cursor-default": ""
+    const buttonBProps = (type === "B") ? "" : ""
+    const buttonCProps = (type === "C" ) ? " text-left text-sm hover:bg-slate-200" : ""
+
     const cellProp = "col-span-2" + typeAProps + typeBProps + typeCProps
     const miniCellProp = "col-span-1" + typeAProps + typeBProps + typeCProps
+    const buttonProp = "col-span-2" + buttonAProps + buttonBProps + buttonCProps
 
 
     // eslint-disable-next-line
@@ -35,6 +42,7 @@ const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increa
             setVisible(true)
             console.log(e.target.value)
             setPayload(e.target.value)
+            setRowCount(rowCount)
         }
     }
 
@@ -56,7 +64,7 @@ const HTDataRow = ({ type, bsnsNm, lastYear, thisYear, nextYear, updated, increa
                 {numberHandler(nextYear)}
             </div>
 
-            <button className={cellProp} onClick={SummonUnitCostCalculator} value={updated}>
+            <button className={buttonProp} onClick={SummonUnitCostCalculator} value={updated}>
                 {numberHandler(updated)}
             </button>
 
