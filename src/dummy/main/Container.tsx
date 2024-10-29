@@ -1,17 +1,17 @@
 'use client'
 
-import Header from "./Header";
-import HorizontalTable from "./horizontalTable/HorizontalTable";
-import Line from "./Line";
-import SummaryTable from "./SummaryTable";
-import Title from "./component/Title";
+import Header from "../Header";
+import HorizontalTable from "../horizontalTable/HorizontalTable";
+import Line from "../Line";
+import SummaryTable from "../SummaryTable";
+import Title from "../component/Title";
 // import BasicCalculator from "./calculators/BasicCalculator";
-import UnitCostCalculator from "./calculators/UnitCostCalculator";
+import UnitCostCalculator from "../calculators/UnitCostCalculator";
 import { useEffect, useState } from "react";
-import BottomButtons from "./buttonGroup/BottomButtons";
-import LoadingMark from "./component/LoadingMark";
+import BottomButtons from "../buttonGroup/BottomButtons";
+import LoadingMark from "../component/LoadingMark";
 import { ht_mapper } from "@/data/ht_mapper";
-import SbjtList from "./sbjtList/SbjtList";
+import SbjtList from "../sbjtList/SbjtList";
 
 const Container = () => {
     const [visible, setVisible] = useState(false)

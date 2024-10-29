@@ -1,3 +1,4 @@
+'use client'
 import IndexPageButtons from '@/components/buttonGroup/IndexPageButtons';
 
 export default function Home() {

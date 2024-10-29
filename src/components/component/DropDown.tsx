@@ -2,27 +2,26 @@
 
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { useState } from 'react'
 
 interface DropDownProps {
-  defaultValue: string
-  menuItems: string[]
+  lastYear: number
+  years: number[]
+  // eslint-disable-next-line
+  setYear: any
 }
 
-export default function DropDown( { defaultValue, menuItems }: DropDownProps ) {
-
-    const [ createdYear, setCreatedYear ] = useState(defaultValue)
+export default function DropDown( { years, lastYear, setYear }: DropDownProps ) {
 
     // eslint-disable-next-line
     const dropdownMenuClick = (e: any) => {
-        setCreatedYear(e.target.text)
+        setYear(Number(e.target.text.replace("년", "")))
     }
 
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
         <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-1 py-1 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-200">
-          {createdYear}
+          {lastYear}
           <ChevronDownIcon aria-hidden="true" className="-mr-1 h-5 w-5 text-gray-400" />
         </MenuButton>
       </div>
@@ -33,7 +32,7 @@ export default function DropDown( { defaultValue, menuItems }: DropDownProps ) {
       >
         <div className="py-1">
           {
-            menuItems.map(
+            years.map(
               (e, i) => (
                 <MenuItem key={"MI"+e+i}>
                   <a
@@ -42,7 +41,7 @@ export default function DropDown( { defaultValue, menuItems }: DropDownProps ) {
                     onClick={dropdownMenuClick}
                     key={"a"+e+i}
                   >
-                    {e}
+                    {`${e.toString()}년`}
                   </a>
                 </MenuItem>
               )
