@@ -1,4 +1,5 @@
-import the_data from "./the_data.json"
+// import the_data from "./the_data.json"
+import the_data from "./전자부품산업기술개발.json"
 import { rounderNumber } from "../utils/rounder"
 
 
@@ -298,7 +299,7 @@ class MotherDataClass {
                             : 0))
                     , 0)
 
-                const lastYearNeAmount = e.budget.find(e => e.year === this.year)?.amount || 0
+                const lastYearNeAmount = e.budget.find(el => (el.year === this.year) && this.year < Number(e.endDate) )?.amount || 0
                 const weight = (lastYearSeAmount !== 0) ? lastYearNeAmount/lastYearSeAmount : 0
                 return {
                     name: e.name,
@@ -353,7 +354,7 @@ class MotherDataClass {
         // eslint-disable-next-line
         se.budget.map((e: any) => {
             const idx = tableData.findIndex((el) => el.year === e.year)
-            if (idx> 0) {tableData[idx].amount = e.amount}
+            if (idx >= 0) {tableData[idx].amount = e.amount}
         })
 
         return {

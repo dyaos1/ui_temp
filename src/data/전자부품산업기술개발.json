@@ -1,0 +1,544 @@
+{
+    "data": {
+        "세부사업": {
+            "사업명": "전자시스템산업기술개발",
+            "시작일": "2011",
+            "종료일": "2027",
+            "예산": [
+                { "년도": 2020, "금액": 30505 }, 
+                { "년도": 2021, "금액": 28966 }, 
+                { "년도": 2022, "금액": 25234 }, 
+                { "년도": 2023, "금액": 28600 }, 
+                { "년도": 2024, "금액": 13545 }
+            ],
+            "내역사업": [
+                {
+                    "사업명": "광융합휴먼케어",
+                    "시작일": "2020",
+                    "종료일": "2024",
+                    "예산": [ 
+                        { "년도": 2020, "금액": 900 }, 
+                        { "년도": 2021, "금액": 3596 }, 
+                        { "년도": 2022, "금액": 5850 }, 
+                        { "년도": 2023, "금액": 4500 }, 
+                        { "년도": 2024, "금액": 618 }
+                    ],
+                    "과제": [
+                    {
+                        "name": "구강건조증 개선을 위한 LED기반~",
+                        "startDate": "2022.06.01",
+                        "endDate": "2024.12.31",
+                        "mainOrganization": "에스티지24",
+                        "subOrganizations": "단국대학교의과대학부속병원, 한국광기술원",
+                        "budget": [
+                            {"year": 2022, "amount": "518"},
+                            {"year": 2023, "amount": "900"},
+                            {"year": 2024, "amount": "618"}
+                        ],
+                        
+                        "nation": null,
+                        "foreign": null
+                    }, {
+                        "name": "만성질환 예후 분석을 위한~",
+                        "startDate": "2021.06.01",
+                        "endDate": "2023.12.31",
+                        "mainOrganization": "(주)메디헬프라인",
+                        "subOrganizations": "한국스마트의료기기산업진흥재단, 분당서울대학교병원, (주)미인즈컴퍼니, 성남시의료원",
+                        "budget": [
+                            {"year": 2021, "amount": "514"},
+                            {"year": 2022, "amount": "518"},
+                            {"year": 2023, "amount": "900"}
+                        ],
+                        
+                        "nation": null,
+                        "foreign": null
+                    }, {
+                        "name": "수면 상태 진단을 위한 fNIRG~",
+                        "startDate": "2021.06.01",
+                        "endDate": "2023.12.31",
+                        "mainOrganization": "현대이디에스",
+                        "subOrganizations": "부산대학교 산학협력단",
+                        "budget": [
+                            {"year": 2021, "amount": "514"},
+                            {"year": 2022, "amount": "518"},
+                            {"year": 2023, "amount": "900"}
+                        ],
+                        
+                        "nation": null,
+                        "foreign": null
+                    }, {
+                        "name": "불면개선 및 수면 질 향상을 위한~",
+                        "startDate": "2021.06.01",
+                        "endDate": "2023.12.31",
+                        "mainOrganization": "(주)파인테크닉스",
+                        "subOrganizations": "한국광기술원, (주)한국섬유기계융합연구원, 단국대학교의과대학부속병원",
+                        "budget": [
+                            {"year": 2021, "amount": "514"},
+                            {"year": 2022, "amount": "518"},
+                            {"year": 2023, "amount": "900"}
+                        ],
+                        
+                        "nation": null,
+                        "foreign": null
+                    }, {
+                        "name": "호흡개선(비염 등)을 위한 최소 침습형 관전달 구조가~",
+                        "startDate": "2021.06.01",
+                        "endDate": "2023.12.31",
+                        "mainOrganization": "한국광기술원, (주)한국섬유기계융합연구원, 단국대학교의과대학부속병원",
+                        "subOrganizations": null,
+                        "budget": [
+                            {"year": 2021, "amount": "514"},
+                            {"year": 2022, "amount": "518"},
+                            {"year": 2023, "amount": "900"}
+                        ],
+                        
+                        "nation": null,
+                        "foreign": null
+                    }, {
+                        "name": "구강건강 관리를 위한 LED 표준광원과 가정용 구강~",
+                        "startDate": "2020.06.01",
+                        "endDate": "2022.12.31",
+                        "mainOrganization": "오스템임플란트(주)",
+                        "subOrganizations": "한국광기술원 서울대치과병원",
+                        "budget": [
+                            {"year": 2020, "amount": "450"},
+                            {"year": 2021, "amount": "514"},
+                            {"year": 2022, "amount": "518"}
+                        ],
+                        
+                        "nation": null,
+                        "foreign": null
+                    }, {
+                        "name": "피부 미용 및 주름개선용 초소형 LED 기반~",
+                        "startDate": "2020.06.01",
+                        "endDate": "2022.12.31",
+                        "mainOrganization": "(주)링크옵틱스",
+                        "subOrganizations": "전남대, 한국광기술원, 신수제약(수요), 콜마스크(수요)",
+                        "budget": [
+                            {"year": 2020, "amount": "450"},
+                            {"year": 2021, "amount": "514"},
+                            {"year": 2022, "amount": "518"}
+                        ],
+                        
+                        "nation": null,
+                        "foreign": null
+                    }
+                ]
+                }, 
+                {
+                    "사업명": "3d 프린팅 특화 설계~",
+                    "시작일": "2020",
+                    "종료일": "2024",
+                    "예산": [
+                        { "년도": 2020, "금액": 2250 }, 
+                        { "년도": 2021, "금액": 5830 }, 
+                        { "년도": 2022, "금액": 8100 }, 
+                        { "년도": 2023, "금액": 4500 }, 
+                        { "년도": 2024, "금액": 1236 }
+                    ],
+                    "과제": [
+                        {
+                            "name": "3d 프린팅 특화 설계~",
+                            "startDate": "2020.06.01",
+                            "endDate": "2022.12.31",
+                            "mainOrganization": "(주)스타코",
+                            "subOrganizations": "(주)에프에스티, 한국생산기술연구원, 경북대학교 산학협력단",
+                            "budget": [
+                                {"year": 2020, "amount": "450"},
+                                {"year": 2021, "amount": "730"},
+                                {"year": 2022, "amount": "810"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "DfAM 기반 3D프린팅 제조기술을 이용한 고순도 5G~",
+                            "startDate": "2020.06.01",
+                            "endDate": "2022.12.31",
+                            "mainOrganization": "주식회사 지엔아이솔루션",
+                            "subOrganizations": "한국생산기술연구원, 부산대학교, 경희대학교",
+                            "budget": [
+                                {"year": 2020, "amount": "450"},
+                                {"year": 2021, "amount": "730"},
+                                {"year": 2022, "amount": "810"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "DfAM 기반 3D프린팅 제조기술을 활용한 자동차 주행 성능~",
+                            "startDate": "2020.06.01",
+                            "endDate": "2022.12.31",
+                            "mainOrganization": "(주)우신산업",
+                            "subOrganizations": "서울대학교산학협력단, 한국생산기술연구원, 한국자동차연구원, 액츠테크놀러지스, 주식회사 링크 솔루션",
+                            "budget": [
+                                {"year": 2020, "amount": "450"},
+                                {"year": 2021, "amount": "730"},
+                                {"year": 2022, "amount": "810"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "다중소재 DED 금속 3D프린팅 기술기반 중대형~",
+                            "startDate": "2020.06.01",
+                            "endDate": "2022.12.31",
+                            "mainOrganization": "(주)디엔솔루션",
+                            "subOrganizations": "한국생산기술연구원, 대전테크노파크, 조선대학교, 인천대학교",
+                            "budget": [
+                                {"year": 2020, "amount": "450"},
+                                {"year": 2021, "amount": "730"},
+                                {"year": 2022, "amount": "810"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "항공우주 3D프린팅 수요부품 경량화 및 일체화를 위한~",
+                            "startDate": "2020.06.01",
+                            "endDate": "2022.12.31",
+                            "mainOrganization": "네오스펙",
+                            "subOrganizations": "에스엔케이항공(주), 한국생산기술연구언, 대전테크노파크, 연세대학교산학협력단",
+                            "budget": [
+                                {"year": 2020, "amount": "450"},
+                                {"year": 2021, "amount": "730"},
+                                {"year": 2022, "amount": "810"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "800V 고전압 미래전기차용 10kW급 열교환기의~~",
+                            "startDate": "2021.06.01",
+                            "endDate": "2023.12.31",
+                            "mainOrganization": "(주)태성에스엔이",
+                            "subOrganizations": "현대자동차(주)남양연구소, 한국생산기술연구원, 서울과학기술대학교",
+                            "budget": [
+                                {"year": 2021, "amount": "730"},
+                                {"year": 2022, "amount": "810"},
+                                {"year": 2023, "amount": "900"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "관절 주위 복합골절 정복을 위한 3D 프린팅~",
+                            "startDate": "2021.06.01",
+                            "endDate": "2023.12.31",
+                            "mainOrganization": "주식회사올소테크",
+                            "subOrganizations": "(주)코어라인소프트~",
+                            "budget": [
+                                {"year": 2021, "amount": "730"},
+                                {"year": 2022, "amount": "810"},
+                                {"year": 2023, "amount": "900"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "3D 프린팅 특화설계 기반 절삭공구용 부품~",
+                            "startDate": "2021.06.01",
+                            "endDate": "2023.12.31",
+                            "mainOrganization": "(주)컨셉션",
+                            "subOrganizations": "(주)대건테크~",
+                            "budget": [
+                                {"year": 2021, "amount": "730"},
+                                {"year": 2022, "amount": "810"},
+                                {"year": 2023, "amount": "900"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "민간주도 소형 우주 발사체 엔진용 연소기 내열부품 통합 제작을 위한~~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2024.12.31",
+                            "mainOrganization": "주식회사 비츠로넥스텍",
+                            "subOrganizations": "(주)대한항공~",
+                            "budget": [
+                                {"year": 2022, "amount": "810"},
+                                {"year": 2023, "amount": "900"},
+                                {"year": 2024, "amount": "682"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "DfAM기반 Cu부품 고효율화 설계기술 및 적층제조기술 개발",
+                            "startDate": "2022.06.01",
+                            "endDate": "2024.12.31",
+                            "mainOrganization": "(주)대건테크",
+                            "subOrganizations": "(주)컨셉션~",
+                            "budget": [
+                                {"year": 2022, "amount": "810"},
+                                {"year": 2023, "amount": "900"},
+                                {"year": 2024, "amount": "554"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }
+                    ]
+                }, {
+                    "사업명": "3d 프린팅 융합 실증기술개발",
+                    "시작일": "2022",
+                    "종료일": "2025",
+                    "예산": [
+                        { "년도": 2022, "금액": 2250 }, 
+                        { "년도": 2023, "금액": 6000 }, 
+                        { "년도": 2024, "금액": 4950 }
+                    ],
+                    "과제": [
+                        {
+                            "name": "운항 선박 내 신속 MRO대응을 위한 설계공정 디지털 Library~",
+                            "startDate": "2023.06.01",
+                            "endDate": "2025.12.31",
+                            "mainOrganization": "씨에스캠주식회사",
+                            "subOrganizations": "에이치디현대중공업 주식회사~",
+                            "budget": [
+                                {"year": 2023, "amount": "600"},
+                                {"year": 2024, "amount": "825"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "초내열 에너지 부품 제작 및 재생수리를 위한 3D프린팅 복합 공정 실증기술",
+                            "startDate": "2023.06.01",
+                            "endDate": "2025.12.31",
+                            "mainOrganization": "파트너스랩(주)",
+                            "subOrganizations": "(주)성일터빈~",
+                            "budget": [
+                                {"year": 2023, "amount": "600"},
+                                {"year": 2024, "amount": "825"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "고객 맞춤형 모빌리티 (PBV)~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2024.12.31",
+                            "mainOrganization": "(주)캐리마",
+                            "subOrganizations": "(주)링크솔루션",
+                            "budget": [
+                                {"year": 2022, "amount": "562"},
+                                {"year": 2023, "amount": "1200"},
+                                {"year": 2024, "amount": "910"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "수요 맞춤형 우주항공방산 티타늄 특수부품 고속유연 생산을 위한~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2024.12.31",
+                            "mainOrganization": "케이피항공산업(주)",
+                            "subOrganizations": "한국생산기술연구원, 대전테크노파크, 조선대학교, 인천대학교",
+                            "budget": [
+                                {"year": 2022, "amount": "562"},
+                                {"year": 2023, "amount": "1200"},
+                                {"year": 2024, "amount": "740"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "e모빌리티용 HRC650이상 초고경도급 부품 성능강화를 위한 지능형 DED방식의 3D프린팅~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2024.12.31",
+                            "mainOrganization": "(주)디이엔티",
+                            "subOrganizations": "에스엔케이항공(주), 한국생산기술연구언, 대전테크노파크, 연세대학교산학협력단",
+                            "budget": [
+                                {"year": 2022, "amount": "562"},
+                                {"year": 2023, "amount": "1200"},
+                                {"year": 2024, "amount": "910"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, {
+                            "name": "유해물질 방출 저감을 위한 친환경 CNF 복합 필라멘트 개발~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2024.12.31",
+                            "mainOrganization": "(주)프로토텍",
+                            "subOrganizations": "현대자동차(주)남양연구소, 한국생산기술연구원, 서울과학기술대학교",
+                            "budget": [
+                                {"year": 2022, "amount": "562"},
+                                {"year": 2023, "amount": "1200"},
+                                {"year": 2024, "amount": "740"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }
+                    ]
+                }, {
+                    "사업명": "3d 프린팅 디지털 전환기술개발",
+                    "시작일": "2023",
+                    "종료일": "2027",
+                    "예산": [
+                        { "년도": 2023, "금액": 1000 }, 
+                        { "년도": 2024, "금액": 1797 }
+                    ],
+                    "과제": [
+                        {
+                            "name": "적층공정 메타 데이터 기반 3D프린팅 디지털 전환  플랫폼 기술개발",
+                            "startDate": "2023.06.01",
+                            "endDate": "2027.12.31",
+                            "mainOrganization": "(사)쓰리디융합산업협회",
+                            "subOrganizations": "현대자동차(주)남양연구소, 한국생산기술연구원, 서울과학기술대학교",
+                            "budget": [
+                                {"year": 2023, "amount": "1000"},
+                                {"year": 2024, "amount": "1797"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }
+                    ]
+                }, {
+                    "사업명": "DNA 연계 XR핵심부품~",
+                    "시작일": "2022",
+                    "종료일": "2025",
+                    "예산": [
+                        { "년도": 2022, "금액": 1367 }, 
+                        { "년도": 2023, "금액": 3150 }, 
+                        { "년도": 2024, "금액": 2472 }
+                    ],
+                    "과제": [
+                        {
+                            "name": "전기차용 배터리 팩시스템 생산역량 강화를 위한~",
+                            "startDate": "2023.06.01",
+                            "endDate": "2025.12.31",
+                            "mainOrganization": "가우스랩 주식회사",
+                            "subOrganizations": "현대자동차(주)남양연구소, 한국생산기술연구원, 서울과학기술대학교",
+                            "budget": [
+                                {"year": 2023, "amount": "450"},
+                                {"year": 2024, "amount": "618"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, 
+                        {
+                            "name": "염색산업 현장의 효과적인 장비운영 및 불량요인 해결을 위한",
+                            "startDate": "2022.06.01",
+                            "endDate": "2024.12.31",
+                            "mainOrganization": "(주)애니파이브",
+                            "subOrganizations": "현대자동차(주)남양연구소, 한국생산기술연구원, 서울과학기술대학교",
+                            "budget": [
+                                {"year": 2022, "amount": "456"},
+                                {"year": 2023, "amount": "900"},
+                                {"year": 2024, "amount": "650"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, 
+                        {
+                            "name": "플라스틱 금형성형품의 품질 및 생산성 향상을 위한~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2025.12.31",
+                            "mainOrganization": "(주)셀빅",
+                            "subOrganizations": "현대자동차(주)남양연구소, 한국생산기술연구원, 서울과학기술대학교",
+                            "budget": [
+                                {"year": 2022, "amount": "456"},
+                                {"year": 2023, "amount": "900"},
+                                {"year": 2024, "amount": "554"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, 
+                        {
+                            "name": "발전플랜트 주요설비 작업자 현장 안전사고 예방을 위한~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2025.12.31",
+                            "mainOrganization": "(주)엠폴시스템",
+                            "subOrganizations": "현대자동차(주)남양연구소, 한국생산기술연구원, 서울과학기술대학교",
+                            "budget": [
+                                {"year": 2022, "amount": "456"},
+                                {"year": 2023, "amount": "900"},
+                                {"year": 2024, "amount": "650"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }
+                    ]
+                }, {
+                    "사업명": "IoT가전 핵심부품 기술개발",
+                    "시작일": "2022",
+                    "종료일": "2025",
+                    "예산": [
+                        { "년도": 2022, "금액": 1367 }, 
+                        { "년도": 2023, "금액": 3150 }, 
+                        { "년도": 2024, "금액": 2472 }
+                    ],
+                    "과제": [
+                        {
+                            "name": "AI기반 주파수 채널상태정보(CSI)를 이용한 생활패턴 인식이 가능한~",
+                            "startDate": "2023.06.01",
+                            "endDate": "2025.12.31",
+                            "mainOrganization": "주식회사 큐버",
+                            "subOrganizations": "한국전자기술원",
+                            "budget": [
+                                {"year": 2023, "amount": "450"},
+                                {"year": 2024, "amount": "618"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, 
+                        {
+                            "name": "가전용 경량 AI SoC 설게 및 AI SoC 기반 인공지능 홈오토메이션~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2024.12.31",
+                            "mainOrganization": "(주)한성시스코",
+                            "subOrganizations": "한국전자기술원",
+                            "budget": [
+                                {"year": 2022, "amount": "456"},
+                                {"year": 2023, "amount": "900"},
+                                {"year": 2024, "amount": "650"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, 
+                        {
+                            "name": "정전분무 살균모듈을 장착하여 안전성이 확보된~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2025.12.31",
+                            "mainOrganization": "주식회사 위니아",
+                            "subOrganizations": "(주)에이투어스~",
+                            "budget": [
+                                {"year": 2022, "amount": "456"},
+                                {"year": 2023, "amount": "900"},
+                                {"year": 2024, "amount": "554"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }, 
+                        {
+                            "name": "광학계(HDPE 맟 DOE) 적용을 통한 고정밀 Radar 및 MidlR~",
+                            "startDate": "2022.06.01",
+                            "endDate": "2025.12.31",
+                            "mainOrganization": "(주)옵토전자",
+                            "subOrganizations": "(주)미로",
+                            "budget": [
+                                {"year": 2022, "amount": "456"},
+                                {"year": 2023, "amount": "900"},
+                                {"year": 2024, "amount": "650"}
+                            ],
+                            
+                            "nation": null,
+                            "foreign": null
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

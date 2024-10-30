@@ -10,16 +10,17 @@ interface HeaderProps {
     // eslint-disable-next-line
     setYear: any
     years: number[]
+    name: string
 }
 
-const Header = ({year, setYear, years}: HeaderProps) => {
+const Header = ({year, setYear, years, name}: HeaderProps) => {
     return (
         <div>
             <VerticalSpacer y={20} />
 
             <div className="grid grid-cols-8 gap-10">
                 <div className="text-center">사업명</div>
-                <div>소재부품장비혁신Lab기술개발사업</div>
+                <div>{name}</div>
             </div>
             
             <VerticalSpacer y={20} />

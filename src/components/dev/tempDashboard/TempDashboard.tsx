@@ -88,7 +88,7 @@ const TempDashboard = ({ dashboardData, setDashboardData }: DashboardProps) => {
         
         temp.map((e, i) => {
             if(Number(seInAmount)) {
-                temp[i].amount = (Number(seInAmount) * Number(e.weight))
+                temp[i].amount = rounderNumber(Number(seInAmount) * Number(e.weight))
             } else if (seInAmount == "") {
                 temp[i].amount = null
             }
@@ -208,7 +208,7 @@ const TempDashboard = ({ dashboardData, setDashboardData }: DashboardProps) => {
             </div>
             {
                 dashboardData.ne.map((e, i) => (
-                    <div className="text-center items-center" key={e.name + i}>
+                    <div className="text-center items-center border-t-1 border-solid border-black" key={e.name + i}>
                         <div className="grid grid-cols-5 bg-slate-100 p-1">
                             <div className="col-span-1">
                                 {e.name}

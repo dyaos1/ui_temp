@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import BottomButtons from "../buttonGroup/BottomButtons";
 import LoadingMark from "../component/LoadingMark";
 import HT2 from "./horizontalTable/HT";
-import Header from "./Header";
+import Header from "./Header"
 import SummaryTable from "./SummaryTable";
 import SbjtList from "./sbjtList/SbjtList";
 import MotherDataClass from "../../data/motherClass"
@@ -22,7 +22,9 @@ const Container = () => {
     const [spinner, setSpinner] = useState(true)
 
     useEffect(() => {
-        setTimeout(() => {setSpinner(false)}, 300)
+        setTimeout(() => {setSpinner(false)
+            console.log(mainData.motherData)
+        }, 300)
     }, [])
 
     // 전역상태
@@ -64,7 +66,7 @@ const Container = () => {
                 <>
                     <Line />
 
-                    <Header year={year} setYear={setYear} years={years} />
+                    <Header year={year} setYear={setYear} years={years} name={mainData.getMotherData().se.name}/>
 
                     <Line />
                     {
