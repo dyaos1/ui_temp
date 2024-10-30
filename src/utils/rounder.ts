@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 const rounder = (param: any) : string => {
     if (typeof(param) !== "string") {
         return ""

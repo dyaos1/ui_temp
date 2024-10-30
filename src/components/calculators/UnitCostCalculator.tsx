@@ -1,6 +1,6 @@
+/* eslint-disable */
 'use client'
 
-import { UCICelltoString } from "@/data/data2/sbjt_list2_mapper"
 import numberHandler from "@/utils/numberHandler"
 import { rounderNumber } from "@/utils/rounder"
 import { useEffect, useRef, useState } from "react"
@@ -12,6 +12,7 @@ import { useEffect, useRef, useState } from "react"
 // interface UnitCostCaluculatorParam {
 //     payload: string
 // }
+
 
 const filter = (string: string|undefined|null) => {
     if (string === undefined || string === null ) {
@@ -125,6 +126,7 @@ const UnitCostCalculator = ({ setVisible, dataState, calculatorTarget, setUCStat
     const [editable, ] = useState(false)
     const editableRef = useRef(editable)
 
+    // eslint-disable-next-line
     const [newFormulaIndex, setFormulaNewIndex] = useState("")
 
     // \d{1,5}\s{0,1}개

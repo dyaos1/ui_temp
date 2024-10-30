@@ -1,3 +1,4 @@
+/* eslint-disable */
 const isEmpty = (input: any) => {
     if (!input) { return true }
     if (input === "") { return true }

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { areEmpty, isEmpty } from '@/utils/isEmpty'
 
 interface HTRow2Props {

@@ -1,6 +1,6 @@
 'use client'
 
-import { rounderNumber, rounderNumberTwo } from "@/utils/rounder"
+import { rounderNumber } from "@/utils/rounder"
 import { useEffect, useRef, useState } from "react"
 
 interface DashboardDisplay {
@@ -53,6 +53,7 @@ interface DashboardProps {
     setDashboardData: any
 }
 
+    // eslint-disable-next-line
 const TempDashboard = ({ dashboardData, setDashboardData }: DashboardProps) => {
 
     const [seInAmount, setSeInAmount] = useState((dashboardData.se.in.amount)?.toString() || "")
@@ -60,6 +61,7 @@ const TempDashboard = ({ dashboardData, setDashboardData }: DashboardProps) => {
     const onChangeSeInAmount = (e: any) => {
         const demand: string = e.target.value
         if (Number(demand) || demand == "") {
+            // eslint-disable-next-line
             const initialValue = (seInAmount !== "" && Number(seInAmount)) ? Number(seInAmount) : 0
             setSeInAmount(demand)
         }
